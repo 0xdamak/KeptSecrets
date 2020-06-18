@@ -1,0 +1,169 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)), url(images/pb_lF8VWaPU.png) no-repeat center center /cover;
+}
+
+  /* navbar */
+.nav-menu {
+    /* background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)); */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    transition: all .7s;
+}
+
+
+.accent-color{
+    color: #FF3465;
+    transition: all .4s;
+}
+
+.accent-color:hover{
+    color: white;
+}
+
+.btn-color{
+    color: #FF3465;
+    border: 1px solid #FF3465;
+    border-radius: 0;
+    transition: all .3s;
+    background: transparent;
+}
+
+.btn-color:hover{
+    background-color: #FF3465;
+    color: aliceblue;
+    transform: rotateY(-1px);
+}
+
+
+.line1, .line2, .line3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}  
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+  /* end of navbar */
+
+  /* banner */
+.alignment-class{
+    top: 50%;
+    transform: translateY(30%);
+}
+
+.banner-heading {
+    animation-name: anim;
+    animation-duration: 2s;
+}
+
+.banner-par {
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+    0% {
+    transform: translateX(-100px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+  /* end of banner */
+
+  /* end of header */
+
+.gta-button{
+    color: black;
+    background-color: #FF3465;
+    border-radius: 0;
+    transition: all .2s;
+    width: 30%;
+    }
+    
+.gta-button:hover{
+    background-color: white;
+    color: #FF3465;
+    border: none;
+}
+
+.social{
+    transition: all .4s;
+}
+
+.social:hover{
+    transform: translateY(-3px);
+}
+
+.e-link{
+    color: #fff;
+    transition: all .4s;
+}
+
+.e-link:hover{
+    color: ;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .sm-screen{
+        margin: -10px;
+        text-align: center;
+    }
+    .img-small{
+        max-width: 350px;
+    }
+    .nav-menu{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .alignment-class{
+        transform: translateY(10%)
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .gta-button{
+        width: 150px;
+    }
+}
+
+.footer-link{
+    color: #fff;
+    transition: all .45;
+}
+
+.footer-link:hover{
+    color:white;
+    font-size: 14px;
+    text-decoration: none;
+}
